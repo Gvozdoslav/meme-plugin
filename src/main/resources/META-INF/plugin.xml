@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>org.plumgin.plumgin</id>
+    <name>Plumgin</name>
+    <vendor email="remrostrus2123@yandex.ru" url="https://vk.com/etozhemoyastranicza">Aboba</vendor>
+
+    <description><![CDATA[
+    Plumgin for creating the memes using picture and text
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="MemePlugin" class="MemePlugin" text="Meme Plugin" description="Meme">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl COMMA"/>
+        </action>
+    </actions>
+</idea-plugin>
